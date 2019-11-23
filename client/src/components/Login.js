@@ -1,14 +1,14 @@
 import React from 'react';
-import '_Login.module.scss'
+import './_Login.module.scss';
+import logo from '../assets/logo.png';
 
-
-const login = () => {
+const Login = () => {
     return (
         <section>
             <main>
-                <div className="container">
+                <div className="container login-form">
                     <section>
-                        <img class="img" src={Logo} alt=""/><br/>
+                        <img className="img" src={logo} alt=""/><br/>
                         <label>User</label> <br/>
                         <input type="text" placeholder="User"/><br/>
                         <label>Password</label><br/>
@@ -22,4 +22,4 @@ const login = () => {
     )
 }
 
-export default Login
+export default Login;
