@@ -1,5 +1,8 @@
-img{
-    width: 150px;
+html, body{
+    
+}
+ul li {
+    margin-left: -60px;
 }
 
 h1{
@@ -22,7 +25,7 @@ h1{
     padding-top: 1em;
 }
 input {
-    border-radius: 5px;
+    border-radius: 15px;
     padding-left: 5px;
     margin-bottom: 15px;
 }
@@ -32,4 +35,11 @@ input {
     border-radius: 5px;
     background: #e64d2f;
     color: white;
+}
+a{
+    text-align: center;
+}
+
+a > p {
+    text-decoration: underline;
 }
