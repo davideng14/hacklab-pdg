@@ -1,4 +1,6 @@
 import React from 'react';
+import '_Login.module.scss'
+
 
 const login = () => {
     return (
@@ -6,7 +8,7 @@ const login = () => {
             <main>
                 <div className="container">
                     <section>
-                        <img class="img" src="./img/OnHire-07.png" alt=""/><br/>
+                        <img class="img" src={Logo} alt=""/><br/>
                         <label>User</label> <br/>
                         <input type="text" placeholder="User"/><br/>
                         <label>Password</label><br/>
