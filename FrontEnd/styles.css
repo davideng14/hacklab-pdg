@@ -1,0 +1,31 @@
+html, body{
+    background-color: #d9edf7;
+}
+ul li {
+    margin-left: -60px;
+}
+
+h1{
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.container{
+    margin-top: 5em;
+    border: 1px solid gray;
+    border-radius: 15px;
+    width: 500px;
+    height: 500px;
+    padding: 25px;
+    text-align: center;
+    
+}
+
+.container section {
+    
+    padding-top: 10em;
+}
+input {
+    border-radius: 15px;
+    padding-left: 5px;
+}
