@@ -1,5 +1,14 @@
 import React, { Component } from 'react';
 import logo from './assets/logo.png';
+import Business from './components/Business/Business';
+import Users from './components/Users/Users';
+import Login from './components/Login';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './scss/App.scss';
 
@@ -22,22 +31,21 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          
-          <p>
-            Welcome to React
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {this.state.apiResponse}
-          </a>
-        </header>
-      </div>
+      <Router>
+      
+        <Switch>
+          <Route path="/business">
+            <Business />
+          </Route>
+          <Route path="/users">
+            <Users />
+          </Route>
+          <Route path="/">
+            <Login />
+          </Route>
+        </Switch>
+      
+    </Router>
     );
   }
 }
