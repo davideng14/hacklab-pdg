@@ -1,5 +1,13 @@
 @import "../global/all";
 
 body {
-    overflow-x: hidden;
+    .container{
+        margin-top: 2em;
+
+        .progress {
+            margin-bottom: 2em;
+        }
+    }
+
+
 }
